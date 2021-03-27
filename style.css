@@ -102,6 +102,13 @@ a {
 
 
 
+@media all and (min-device-width: 320px) and (max-device-width: 480px) {
+  .col-45 {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 @media all and (min-device-width: 480px) and (max-device-width: 768px) {
   .col-45 {
     grid-template-columns: 1fr;
