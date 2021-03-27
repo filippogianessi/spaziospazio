@@ -99,3 +99,23 @@ a {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-200%, 0); }
 }
+
+
+
+@media all and (min-device-width: 480px) and (max-device-width: 768px) {
+  .col-45 {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .col-45 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-device-width: 1024px) and (max-device-width: 1440px) {
+
+
+}
