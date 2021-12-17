@@ -171,7 +171,7 @@ svg{
 
 @media all and (min-device-width: 320px) and (max-device-width: 480px) {
   .kitten {
-    background-image: url(https://placekitten.com/480/1080);
+    background-image: url(https://placekitten.com/480/820);
   }
   h1 {
     font-size: 64px;
