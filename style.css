@@ -152,11 +152,28 @@ a {
     font-size: 64px;
   }
 
+  .marquee__text {
+      animation: marquee 10s linear infinite;
+  }
+
+  @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-500%, 0); }
+  }
+
 }
 
 @media all and (min-device-width: 480px) and (max-device-width: 768px) {
   .kitten {
     background-image: url(https://placekitten.com/768/1080);
+  }
+  .marquee__text {
+      animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-500%, 0); }
   }
 
 }
@@ -170,6 +187,15 @@ a {
 @media all and (min-device-width: 1024px) and (max-device-width: 1440px) {
   .kitten {
     background-image: url(https://placekitten.com/1440/1080);
+  }
+
+  .marquee__text {
+      animation: marquee 32s linear infinite;
+  }
+
+  @keyframes marquee {
+      0%   { transform: translate(0, 0); }
+      100% { transform: translate(-500%, 0); }
   }
 
 }
