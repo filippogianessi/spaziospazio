@@ -148,6 +148,9 @@ a {
   .kitten {
     background-image: url(https://placekitten.com/480/1080);
   }
+  h1 {
+    font-size: 64px;
+  }
 
 }
 
