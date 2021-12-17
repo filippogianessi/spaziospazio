@@ -145,26 +145,28 @@ a {
 }
 
 @media all and (min-device-width: 320px) and (max-device-width: 480px) {
-  .col-45 {
-    grid-template-columns: 1fr;
+  .kitten {
+    background-image: url(https://placekitten.com/480/1080);
   }
 
 }
 
 @media all and (min-device-width: 480px) and (max-device-width: 768px) {
-  .col-45 {
-    grid-template-columns: 1fr;
+  .kitten {
+    background-image: url(https://placekitten.com/768/1080);
   }
 
 }
 
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .col-45 {
-    grid-template-columns: 1fr;
+  .kitten {
+    background-image: url(https://placekitten.com/1024/1080);
   }
 }
 
 @media all and (min-device-width: 1024px) and (max-device-width: 1440px) {
-
+  .kitten {
+    background-image: url(https://placekitten.com/1440/1080);
+  }
 
 }
