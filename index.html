@@ -16,6 +16,82 @@
       <h1>SPAZIO</h1>
       <p>Open Workspace</p>
     </div>
+
+    <!--==========================================-->
+<!--Margus Lillemägi | codepen.io/VisualAngle/-->
+<!--==========================================-->
+
+<!--One of the most interesting and useful features of SVG is the capability of using paths for positioning shapes and text. This example demonstrates how to place a shape and text along a curve path and animating it with SMIL.-->
+
+<!--Have fun with SVG! :)-->
+
+<div id="container">
+    <svg
+        preserveAspectRatio="xMidYMin slice"
+        viewBox="0 0 600 220"
+        xmlns="http://www.w3.org/2000/svg" version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <!-- Motion path -->
+        <path d="M 50,100 S 100,132 150,86 200,173 250,76 300,81 350,136 400,87 450,166 500,87 550,96"
+            stroke="transparent" stroke-width="10"
+            fill="none" id="theMotionPath"/>
+
+        <!-- Key points -->
+        <circle
+            cx="50"
+            cy="100"
+            r="15"
+            fill="transparent"/>
+
+        <circle
+            cx="550"
+            cy="96"
+            r="15"
+            fill="transparent" />
+
+        <!-- Key point text -->
+        <text
+            fill="transparent"
+            style="font-family:monospace;font-size:20px">
+
+            <tspan
+                x="30"
+                y="150">
+                Start
+            </tspan>
+
+            <tspan
+                x="540"
+                y="145">
+                End
+            </tspan>
+        </text>
+
+        <!-- Red circle along the motion path. -->
+        <circle
+                cx=""
+                cy=""
+                r="15"
+                fill="#FF4F13">
+
+              <!-- Define the motion path animation for the shape -->
+              <animateMotion
+                dur="8s"
+                repeatCount="indefinite">
+                <mpath xlink:href="#theMotionPath"/>
+             </animateMotion>
+        </circle>
+
+        <!-- Shape text along the motion path -->
+
+
+
+    </svg>
+</div>
+
+
+
     <div class="marquee__container">
       <div class="marquee">
         <h5 class="marquee__text paragraph--small">
