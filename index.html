@@ -11,7 +11,11 @@
     <meta property="og:image" content="https://placekitten.com/1440/1080" />
   </head>
   <body>
-    <div class="kitten">
+    <audio id="heartbeat" src="Cat-meow-short.mp3" preload="auto">
+    	Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <div id="play" class="kitten">
       <img class="logo" src="Logo.svg" alt="Logo Spazio Spazio">
     </div>
     <div id="container">
@@ -35,6 +39,10 @@
              </animateMotion>
         </circle>
       </svg>
+      <div class="oliver-button adieu">
+        <button id="play" class="adieu">OLIVER BUTTON</button>
+        <!-- <button id="reset">Play 2</button> -->
+      </div>
     </div>
     <div class="marquee__container">
       <div class="marquee">
@@ -43,5 +51,35 @@
         </h5>
       </div>
     </div>
+
+    <script type="text/javascript">
+    var playBtn = document.getElementById('play'),
+        resetBtn = document.getElementById('reset'),
+        hearbeat = document.getElementById('heartbeat')
+        audios = document.querySelectorAll('audio');
+        console.log(audios);
+
+
+        playBtn.addEventListener('mouseover', function() {
+        [].forEach.call(audios, function(audio) {
+        // do whatever
+        audio.play();
+        });
+        }, false);
+
+        playBtn.addEventListener('mouseleave', function() {
+        heartbeat.pause();
+        heartbeat.currentTime = 0;
+        }, false);
+
+        resetBtn.addEventListener('mouseover', function() {
+          heartbeat.play();
+        }, false);
+
+        resetBtn.addEventListener('mouseleave', function() {
+        heartbeat.pause();
+        heartbeat.currentTime = 0;
+        }, false);
+    </script>
   </body>
 </html>

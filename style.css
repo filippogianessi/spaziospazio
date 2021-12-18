@@ -165,7 +165,7 @@ a {
   width:100%;
   overflow:hidden;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -179,7 +179,7 @@ svg{
   overflow: visible;
  }
 
- #container:hover {
+ #container:hover, .oliver-button button:hover {
    cursor: url('cursor-hover.png'), auto;
  }
 
@@ -187,6 +187,20 @@ svg{
   width: 55vw;
 }
 
+.oliver-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oliver-button button {
+  color: white;
+  border: white 2px solid;
+  border-radius: 12px;
+  background: transparent;
+  padding: 24px 36px;
+  font-size: 20px;
+}
 
 @media all and (min-device-width: 320px) and (max-device-width: 480px) {
   .kitten {
@@ -206,6 +220,10 @@ svg{
   }
   .logo {
     width: 80vw;
+  }
+
+  svg {
+    height: 240px;
   }
 
 }
